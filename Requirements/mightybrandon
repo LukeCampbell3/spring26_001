@@ -1,0 +1,12 @@
+Animal Shelter Managing System
+
+1   must be able to track animals in shelter
+2   must be able to track resources such as food and bedding
+3   must be able to track adoption requests / applications
+4   must allow data entry for the above information
+5   must connect to server for multi-user
+6   must allow user to manage database/website info within server
+7   follow-up to above: need a website and database connection
+8   must be accessible to non-tech literate users
+9   must be able to synchronize with veterinatry database
+10  must be able to aggregate data into appropriate readable/printable formats for physical printing
