@@ -1,1 +1,46 @@
 Alex Gillespie, Connor Fulks, Luke Campbell, Brady Loos
+
+namespace Recursive
+{
+    public class RecursiveAddition
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, finalNum;
+
+            Console.WriteLine("Give me two numbers");
+            Int32.TryParse(Console.ReadLine(), out num1);
+            Int32.TryParse(Console.ReadLine(), out num2);
+            finalNum = num1 + num2;
+            string finalString = RecursionMath(finalNum);
+            Console.WriteLine(finalNum);
+        }
+        // Method that recursively grabs a string and adds the least sig digit
+        public static string RecursionMath(int num)
+        {
+            string newNum = String.Empty;
+            try
+            {
+                newNum = Convert.ToString(num);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            char[] nums = newNum.ToCharArray();
+
+            int numToAdd = nums[nums.Length - 1];
+            int tempNum = 0;
+            string remainingNum = String.Empty;
+            for (var i = 0; i < nums.Length - 2; i++)
+            {
+                remainingNum = "" + nums[i];
+            }
+            Int32.TryParse(remainingNum, out tempNum);
+            remainingNum += numToAdd;
+            return remainingNum;
+        }
+    }
+
+}
+Doesn't work
