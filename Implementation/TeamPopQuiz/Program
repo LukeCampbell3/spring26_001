@@ -24,6 +24,12 @@ internal class Program
                 return;
             }
 
+            if (X >= -9 && X <= 9)
+            {
+                Console.WriteLine($"Final result: {X}");
+                return;
+            }
+
             int result = Recursive(X);
 
             Console.WriteLine($"Final result: {result}");
